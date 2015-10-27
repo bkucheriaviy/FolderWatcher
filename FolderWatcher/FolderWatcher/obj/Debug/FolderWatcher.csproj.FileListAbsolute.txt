@@ -1,0 +1,13 @@
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\bin\Debug\FolderWatcher.exe.config
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\obj\Debug\FolderWatcher.csprojResolveAssemblyReference.cache
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\obj\Debug\MainWindow.baml
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\obj\Debug\MainWindow.g.cs
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\obj\Debug\App.g.cs
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\obj\Debug\FolderWatcher_MarkupCompile.cache
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\obj\Debug\FolderWatcher.g.resources
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\obj\Debug\FolderWatcher.Properties.Resources.resources
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\obj\Debug\FolderWatcher.csproj.GenerateResource.Cache
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\bin\Debug\FolderWatcher.exe
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\bin\Debug\FolderWatcher.pdb
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\obj\Debug\FolderWatcher.exe
+c:\users\bohdan.kucheriavyi\documents\visual studio 2013\Projects\FolderWatcher\FolderWatcher\obj\Debug\FolderWatcher.pdb

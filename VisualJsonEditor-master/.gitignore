@@ -1,0 +1,11 @@
+**/bin/**
+**/obj/**
+**/packages/**
+
+**.suo
+**.user
+**.DotSettings
+
+/src/VisualJsonEditor.sln.ide
+/src/UpgradeLog.htm
+/src/VisualJsonEditor.sln.GhostDoc.xml
