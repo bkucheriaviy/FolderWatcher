@@ -9,20 +9,20 @@ namespace SampleMVVM
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : Application
+    public partial class App
     {
         private void OnStartup(object sender, StartupEventArgs e)
         {
-            List<Book> books = new List<Book>()
+            var books = new List<Book>()
             {
                 new Book("Колобок", null, 3),
                 new Book("CLR via C#", "Джеффри Рихтер", 1),
                 new Book("Война и мир", "Л.Н. Толстой", 2)
             };
 
-            MainView view = new MainView(); // создали View
-            MainViewModel viewModel = new ViewModels.MainViewModel(books); // Создали ViewModel
-            view.DataContext = viewModel; // положили ViewModel во View в качестве DataContext
+            var view = new MainView();
+            var viewModel = new MainViewModel(books);
+            view.DataContext = viewModel;
             view.Show();
         }
     }

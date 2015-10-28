@@ -11,3 +11,5 @@ C:\Users\bohdan.kucheriavyi\Desktop\SampleMVVM\SampleMVVM\obj\Debug\SampleMVVM.P
 C:\Users\bohdan.kucheriavyi\Desktop\SampleMVVM\SampleMVVM\obj\Debug\SampleMVVM.csproj.GenerateResource.Cache
 C:\Users\bohdan.kucheriavyi\Desktop\SampleMVVM\SampleMVVM\obj\Debug\SampleMVVM.exe
 C:\Users\bohdan.kucheriavyi\Desktop\SampleMVVM\SampleMVVM\obj\Debug\SampleMVVM.pdb
+C:\Users\Bohdan\Desktop\FolderWatcher\SampleMVVM\SampleMVVM\obj\Debug\SampleMVVM.exe
+C:\Users\Bohdan\Desktop\FolderWatcher\SampleMVVM\SampleMVVM\obj\Debug\SampleMVVM.pdb
