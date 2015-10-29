@@ -29,11 +29,11 @@ namespace FolderWatcher.BusinessLayer.FolderWatcher
 
         private async void OnCreated(object sender, FileSystemEventArgs e)
         {
-            var file = new FileInfo(e.FullPath);
+            var filePath = e.FullPath;
             foreach (var reader in _fileReaders)
             {
-                if (reader.Match(file))
-                    FileFound(this, new FileFoundEventHandlerArgs {File = await reader.ReadFile(file)});
+                if (reader.Match(filePath))
+                    FileFound(this, new FileFoundEventHandlerArgs { File = await reader.ReadFile(filePath) });
                 break;
             }
         }

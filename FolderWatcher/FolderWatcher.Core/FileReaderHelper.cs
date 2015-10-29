@@ -1,13 +1,17 @@
 ﻿using System.IO;
-using System.Text;
+using System.Threading;
 using FolderWatcher.Core.Interfaces.FileReaders;
 
 namespace FolderWatcher.Core
 {
     public class FileReaderHelper : IFileReaderHelper
     {
-        public string[] ReadText(FileInfo fileInfo)
+        public string[] ReadText(string path)
         {
+            if (!File.Exists(path)) throw new FileNotFoundException("Target file is not exist", path);
+
+            var fileInfo = new FileInfo(path);
+
             while (true)
             {
                 if (!IsFileLocked(fileInfo))
@@ -16,6 +20,7 @@ namespace FolderWatcher.Core
                 }
             }
         }
+
         private bool IsFileLocked(FileInfo file)
         {
             FileStream stream = null;
@@ -26,10 +31,6 @@ namespace FolderWatcher.Core
             }
             catch (IOException)
             {
-                //the file is unavailable because it is:
-                //still being written to
-                //or being processed by another thread
-                //or does not exist (has already been processed)
                 return true;
             }
             finally
@@ -38,7 +39,6 @@ namespace FolderWatcher.Core
                     stream.Close();
             }
 
-            //file is not locked
             return false;
         }
     }

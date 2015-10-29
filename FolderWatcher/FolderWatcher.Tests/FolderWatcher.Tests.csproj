@@ -56,10 +56,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BusinessLayer\FileReaders\TextStockFileReaderTests.cs" />
+    <Compile Include="BusinessLayer\FileReaders\TextStockFileReaderTests\TextStockFileMapperTests.cs" />
+    <Compile Include="BusinessLayer\FileReaders\TextStockFileReaderTests\TextStockFileReaderTests.cs" />
+    <Compile Include="BusinessLayer\FolderWatcherTests\FolderWatcherTests.cs" />
+    <Compile Include="Core\FileReaderHelperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Core\TestFiles\any.any">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +78,7 @@
       <Name>FolderWatcher</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

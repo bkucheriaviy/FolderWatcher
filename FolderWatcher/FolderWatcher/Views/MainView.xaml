@@ -26,7 +26,7 @@
                 <DataTemplate>
                     <Border BorderThickness="1" Margin="10">
                         <StackPanel Margin="10">
-                            <DataGrid ItemsSource="{Binding Customers}" />
+                            <DataGrid ItemsSource="{Binding StockData}" />
                         </StackPanel>
                     </Border>
                 </DataTemplate>

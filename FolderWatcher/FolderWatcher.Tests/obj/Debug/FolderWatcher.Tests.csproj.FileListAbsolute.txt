@@ -3,3 +3,14 @@ C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debu
 C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\obj\Debug\FolderWatcher.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\obj\Debug\FolderWatcher.Tests.dll
 C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\obj\Debug\FolderWatcher.Tests.pdb
+C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debug\FolderWatcher.Core.dll
+C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debug\FolderWatcher.exe
+C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debug\Moq.dll
+C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debug\Autofac.dll
+C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debug\FolderWatcher.Core.pdb
+C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debug\FolderWatcher.pdb
+C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debug\Moq.xml
+C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debug\Autofac.xml
+C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Tests\bin\Debug\Core\TestFiles\any.any

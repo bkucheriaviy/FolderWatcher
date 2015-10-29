@@ -4,6 +4,6 @@ namespace FolderWatcher.Core.Interfaces.FileReaders
 {
     public interface IFileReaderHelper
     {
-        string[] ReadText(FileInfo fileInfo);
+        string[] ReadText(string filePath);
     }
 }

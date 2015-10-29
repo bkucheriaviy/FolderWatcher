@@ -11,7 +11,7 @@ namespace FolderWatcher.Infrastructure.Modules
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<TextStockFileReader>().As<IFileReader>();
-            builder.RegisterType<TextStockFileMapper>().As<IStockFileMapper>();
+            builder.RegisterType<TextStockFileMapper>().As<ITextStockFileMapper>();
             builder.RegisterType<FileReaderHelper>().As<IFileReaderHelper>();
         }
     }

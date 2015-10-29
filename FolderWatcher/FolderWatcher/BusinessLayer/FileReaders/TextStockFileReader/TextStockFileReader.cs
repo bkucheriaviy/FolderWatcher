@@ -16,17 +16,17 @@ namespace FolderWatcher.FileReaders.TextStockFileReader
             _fileHelper = fileHelper;
         }
 
-        public bool Match(FileInfo fileInfo)
+        public bool Match(string filePath)
         {
-            return fileInfo.Extension == ".txt";
+            return filePath.Trim().ToLower().EndsWith(".txt");
         }
 
-        public async Task<StockFile> ReadFile(FileInfo fileInfo)
+        public async Task<StockFile> ReadFile(string filePath)
         {
             return await Task.Run(() =>
             {
-                var fileContent = _fileHelper.ReadText(fileInfo);
-                return _textStockFileMapper.Map(fileInfo.FullName, fileContent);
+                var fileContent = _fileHelper.ReadText(filePath);
+                return _textStockFileMapper.Map(Path.GetFileNameWithoutExtension(filePath), fileContent);
             });
         }
     }

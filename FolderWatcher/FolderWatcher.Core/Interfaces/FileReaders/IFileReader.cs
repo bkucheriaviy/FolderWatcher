@@ -1,12 +1,11 @@
-﻿using System.IO;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using FolderWatcher.Core.Models;
 
 namespace FolderWatcher.Core.Interfaces.FileReaders
 {
     public interface IFileReader
     {
-        bool Match(FileInfo fileInfo);
-        Task<StockFile> ReadFile(FileInfo fileInfo);
+        bool Match(string filePath);
+        Task<StockFile> ReadFile(string filePath);
     }
 }

@@ -4,6 +4,6 @@ namespace FolderWatcher.FileReaders.TextStockFileReader
 {
     public interface ITextStockFileMapper
     {
-        StockFile Map(string fileName, string fileContent);
+        StockFile Map(string fileName, string[] fileLines);
     }
 }
