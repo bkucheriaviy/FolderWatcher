@@ -18,6 +18,7 @@ namespace FolderWatcher.Infrastructure
             var builder = new ContainerBuilder();
 
             RegisterModules(builder);
+            RegisterPluggedInReaderModules(builder);
 
             builder.RegisterType<BusinessLayer.FolderWatcher.FolderWatcher>().As<IFolderWatcher>();
             builder.RegisterType<MainViewModel>().As<IMainViewModel>();
@@ -37,7 +38,8 @@ namespace FolderWatcher.Infrastructure
         {
             builder.RegisterModule(new CoreModule());
             builder.RegisterModule(new TextStockFileReaderModule());
-            RegisterPluggedInReaderModules(builder);
+            builder.RegisterModule(new CsvStockFileReaderModule());
+           
         }
 
         private void RegisterPluggedInReaderModules(ContainerBuilder builder)
