@@ -38,6 +38,7 @@
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,13 +65,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BusinessLayer\FileReaders\Interfaces\IFileReader.cs" />
-    <Compile Include="BusinessLayer\FileReaders\TextFileReader.cs" />
+    <Compile Include="BusinessLayer\FileReaders\TextStockFileReader\TextStockFileMapper.cs" />
+    <Compile Include="Infrastructure\Modules\CoreModule.cs" />
+    <Compile Include="Infrastructure\Modules\TextStockFileReaderModule.cs" />
+    <Compile Include="BusinessLayer\FileReaders\TextStockFileReader\Interfaces\ITextStockFileMapper.cs" />
+    <Compile Include="BusinessLayer\FileReaders\TextStockFileReader\TextStockFileReader.cs" />
     <Compile Include="BusinessLayer\FolderWatcher\EventHandlers\FileFoundedEventHandler.cs" />
     <Compile Include="BusinessLayer\FolderWatcher\EventHandlers\FileFoundEventHandlerArgs.cs" />
     <Compile Include="BusinessLayer\FolderWatcher\FolderWatcher.cs" />
-    <Compile Include="Models\TestFile.cs" />
     <Compile Include="BusinessLayer\FolderWatcher\Interfaces\IFolderWatcher.cs" />
+    <Compile Include="Infrastructure\IocContainerBuilder.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
@@ -105,8 +109,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Infrastructure\" />
+    <ProjectReference Include="..\FolderWatcher.Core\FolderWatcher.Core.csproj">
+      <Project>{14ebce18-3554-4fb4-abf8-a72f7332a7cc}</Project>
+      <Name>FolderWatcher.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

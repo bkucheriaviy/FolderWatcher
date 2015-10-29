@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderWatcher", "FolderWatcher\FolderWatcher.csproj", "{D14FD1E3-0E4E-409B-8B0F-DB475C794AE2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderWatcher.Tests", "FolderWatcher.Tests\FolderWatcher.Tests.csproj", "{EFC2FCEE-54EE-4534-A8D7-523EC097F1CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderWatcher.Core", "FolderWatcher.Core\FolderWatcher.Core.csproj", "{14EBCE18-3554-4FB4-ABF8-A72F7332A7CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EFC2FCEE-54EE-4534-A8D7-523EC097F1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFC2FCEE-54EE-4534-A8D7-523EC097F1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFC2FCEE-54EE-4534-A8D7-523EC097F1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EBCE18-3554-4FB4-ABF8-A72F7332A7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EBCE18-3554-4FB4-ABF8-A72F7332A7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EBCE18-3554-4FB4-ABF8-A72F7332A7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EBCE18-3554-4FB4-ABF8-A72F7332A7CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

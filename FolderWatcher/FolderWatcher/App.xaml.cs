@@ -1,7 +1,6 @@
-﻿using System.IO;
-using System.Windows;
-using FolderWatcher.BusinessLayer.FileReaders;
-using FolderWatcher.ViewModels;
+﻿using System.Windows;
+using Autofac;
+using FolderWatcher.Infrastructure;
 using FolderWatcher.Views;
 
 namespace FolderWatcher
@@ -11,17 +10,17 @@ namespace FolderWatcher
     /// </summary>
     public partial class App : Application
     {
-        private void OnStartup(object sender, StartupEventArgs e)
+        private readonly IContainer _container;
+
+        public App()
         {
-            var vm =
-                new MainViewModel(new BusinessLayer.FolderWatcher.FolderWatcher(new[] {new TextFileReader()},
-                    new FileSystemWatcher()));
-            var mainView = new MainView
-            {
-                DataContext = vm
-            };
-            vm.StartLookup();
-            mainView.Show();
+            _container = new IocContainerBuilder().Build();
+        }
+
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            var mainView = _container.Resolve<MainView>();
+            mainView.ShowDialog();
         }
     }
 }
