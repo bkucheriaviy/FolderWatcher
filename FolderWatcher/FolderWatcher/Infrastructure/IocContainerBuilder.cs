@@ -23,12 +23,10 @@ namespace FolderWatcher.Infrastructure
             builder.RegisterType<MainViewModel>().As<IMainViewModel>();
             builder.Register(c =>
             {
+                var mainVm = c.Resolve<IMainViewModel>();
                 var lookupFreq = ConfigurationManager.AppSettings["lookupFrequency"];
                 var lookupFolder = ConfigurationManager.AppSettings["lookupFolderPath"];
-
-                var mainVm = c.Resolve<IMainViewModel>();
                 mainVm.StartLookup(TimeSpan.FromSeconds(int.Parse(lookupFreq)), lookupFolder);
-
                 return new MainView(mainVm);
             }).As<MainView>();
 
@@ -50,7 +48,7 @@ namespace FolderWatcher.Infrastructure
                 return;
             }
 
-            var assemblies = Directory.GetFiles(path, "*.dll", SearchOption.TopDirectoryOnly)
+            var assemblies = Directory.GetFiles(path, "Module*.dll", SearchOption.TopDirectoryOnly)
                 .Select(Assembly.LoadFrom);
 
             foreach (var assembly in assemblies)

@@ -8,7 +8,9 @@ namespace FolderWatcher.Tests.BusinessLayer.FolderWatcherTests
     [TestFixture]
     public class FolderWatcherTests
     {
+        //TODO: CANT
         [Test]
+        [Ignore]
         public void Test()
         {
             //given
@@ -19,7 +21,8 @@ namespace FolderWatcher.Tests.BusinessLayer.FolderWatcherTests
             //when
             watcher.StartLookup(TimeSpan.FromSeconds(5), "path");
             //then
-            watcher.
+            //TODO: Need to refactorFolderWatcher, create my custom file system watcher and inject inside
+            //watcher.
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using FolderWatcher.BusinessLayer.FileReaders.TextStockFileReader;
-using FolderWatcher.Core;
 using FolderWatcher.Core.Interfaces.FileReaders;
 using FolderWatcher.FileReaders.TextStockFileReader;
 
@@ -12,7 +11,6 @@ namespace FolderWatcher.Infrastructure.Modules
         {
             builder.RegisterType<TextStockFileReader>().As<IFileReader>();
             builder.RegisterType<TextStockFileMapper>().As<ITextStockFileMapper>();
-            builder.RegisterType<FileReaderHelper>().As<IFileReaderHelper>();
         }
     }
 }

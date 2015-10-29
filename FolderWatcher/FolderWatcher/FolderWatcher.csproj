@@ -65,12 +65,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BusinessLayer\FileReaders\CsvStockFileReader\Interfaces\ICsvStockFileMapper.cs" />
+    <Compile Include="BusinessLayer\FileReaders\CsvStockFileReader\CsvStockFileMapper.cs" />
+    <Compile Include="BusinessLayer\FileReaders\CsvStockFileReader\CsvStockFileReader.cs" />
     <Compile Include="BusinessLayer\FileReaders\TextStockFileReader\TextStockFileMapper.cs" />
     <Compile Include="Infrastructure\Modules\CoreModule.cs" />
+    <Compile Include="Infrastructure\Modules\CsvStockFileReaderModule.cs" />
+    <Compile Include="Infrastructure\Modules\MainModule.cs" />
     <Compile Include="Infrastructure\Modules\TextStockFileReaderModule.cs" />
     <Compile Include="BusinessLayer\FileReaders\TextStockFileReader\Interfaces\ITextStockFileMapper.cs" />
     <Compile Include="BusinessLayer\FileReaders\TextStockFileReader\TextStockFileReader.cs" />
-    <Compile Include="BusinessLayer\FolderWatcher\EventHandlers\FileFoundedEventHandler.cs" />
+    <Compile Include="BusinessLayer\FolderWatcher\EventHandlers\FileFoundEventHandler.cs" />
     <Compile Include="BusinessLayer\FolderWatcher\EventHandlers\FileFoundEventHandlerArgs.cs" />
     <Compile Include="BusinessLayer\FolderWatcher\FolderWatcher.cs" />
     <Compile Include="BusinessLayer\FolderWatcher\Interfaces\IFolderWatcher.cs" />

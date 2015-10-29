@@ -25,9 +25,9 @@
             <ContentControl.ContentTemplate>
                 <DataTemplate>
                     <Border BorderThickness="1" Margin="10">
-                        <StackPanel Margin="10">
+                        <DockPanel>
                             <DataGrid ItemsSource="{Binding StockData}" />
-                        </StackPanel>
+                        </DockPanel>
                     </Border>
                 </DataTemplate>
             </ContentControl.ContentTemplate>

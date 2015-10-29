@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Threading;
 using FolderWatcher.Core.Interfaces.FileReaders;
 
 namespace FolderWatcher.Core

@@ -13,7 +13,7 @@ namespace FolderWatcher.Tests.Core
         {
             //given
             var appPath = AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
-            var testFilePath = appPath + "\\Core\\TestFiles\\any.any";
+            var testFilePath = appPath + "\\Core\\TestFile\\any.any";
 
             var helper = new FileReaderHelper();
             var expectedResult = new[] {"line1", "line2line2", "line3line3line3"};

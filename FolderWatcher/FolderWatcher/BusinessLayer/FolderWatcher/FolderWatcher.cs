@@ -33,8 +33,10 @@ namespace FolderWatcher.BusinessLayer.FolderWatcher
             foreach (var reader in _fileReaders)
             {
                 if (reader.Match(filePath))
-                    FileFound(this, new FileFoundEventHandlerArgs { File = await reader.ReadFile(filePath) });
-                break;
+                {
+                    FileFound(this, new FileFoundEventHandlerArgs {File = await reader.ReadFile(filePath)});
+                    break;
+                }
             }
         }
     }

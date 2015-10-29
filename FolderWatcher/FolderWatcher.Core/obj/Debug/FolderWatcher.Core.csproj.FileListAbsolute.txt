@@ -1,5 +1,0 @@
-C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Core\obj\Debug\FolderWatcher.Core.csprojResolveAssemblyReference.cache
-C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Core\bin\Debug\FolderWatcher.Core.dll
-C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Core\bin\Debug\FolderWatcher.Core.pdb
-C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Core\obj\Debug\FolderWatcher.Core.dll
-C:\Users\Bohdan\Desktop\FolderWatcher\FolderWatcher\FolderWatcher.Core\obj\Debug\FolderWatcher.Core.pdb

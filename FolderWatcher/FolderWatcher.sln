@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderWatcher.Tests", "Fold
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderWatcher.Core", "FolderWatcher.Core\FolderWatcher.Core.csproj", "{14EBCE18-3554-4FB4-ABF8-A72F7332A7CC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{C195C6CB-2FB4-4A83-916E-7D5457D874FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlStockFileReader", "XmlStockFileReader\XmlStockFileReader.csproj", "{E31AA015-787B-4499-BB73-02E8C20A51EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlStockFileReader.Tests", "XmlStockFileReader.Tests\XmlStockFileReader.Tests.csproj", "{B26C86DF-07D6-4315-A87C-80DAF981CFE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleXmlReader", "ModuleXmlReader\ModuleXmlReader.csproj", "{DC2C945F-91E5-458E-BECF-BFE3A33C4F7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +35,25 @@ Global
 		{14EBCE18-3554-4FB4-ABF8-A72F7332A7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14EBCE18-3554-4FB4-ABF8-A72F7332A7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14EBCE18-3554-4FB4-ABF8-A72F7332A7CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31AA015-787B-4499-BB73-02E8C20A51EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31AA015-787B-4499-BB73-02E8C20A51EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31AA015-787B-4499-BB73-02E8C20A51EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31AA015-787B-4499-BB73-02E8C20A51EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B26C86DF-07D6-4315-A87C-80DAF981CFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B26C86DF-07D6-4315-A87C-80DAF981CFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B26C86DF-07D6-4315-A87C-80DAF981CFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B26C86DF-07D6-4315-A87C-80DAF981CFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC2C945F-91E5-458E-BECF-BFE3A33C4F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2C945F-91E5-458E-BECF-BFE3A33C4F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC2C945F-91E5-458E-BECF-BFE3A33C4F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2C945F-91E5-458E-BECF-BFE3A33C4F7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E31AA015-787B-4499-BB73-02E8C20A51EA} = {C195C6CB-2FB4-4A83-916E-7D5457D874FB}
+		{B26C86DF-07D6-4315-A87C-80DAF981CFE9} = {C195C6CB-2FB4-4A83-916E-7D5457D874FB}
+		{DC2C945F-91E5-458E-BECF-BFE3A33C4F7A} = {C195C6CB-2FB4-4A83-916E-7D5457D874FB}
 	EndGlobalSection
 EndGlobal
